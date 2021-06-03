@@ -5,7 +5,7 @@ import resolve from '@rollup/plugin-node-resolve'
 import replace from 'rollup-plugin-replace-imports-with-vars'
 import json from '@rollup/plugin-json'
 import pkg from './package.json'
-import copy from 'rollup-plugin-copy'
+// import copy from 'rollup-plugin-copy'
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx']
 
@@ -50,15 +50,14 @@ export default {
     typescript(),
     replace({ varType: 'var', replacementLookup: globals }),
     resolve({ extensions }),
-    commonjs(),
-    copy({
-      targets: [
-        {
-          src: './dist/{script,index.modern,index}.{js,css}',
-          dest:
-            '/Users/rart/Workspace/craftercms/develop/crafter-authoring/data/repos/sites/editorial/sandbox/config/studio/plugins/apps/library'
-        }
-      ]
-    })
+    commonjs()
+    // copy({
+    //   targets: [
+    //     {
+    //       src: './dist/{script,index.modern,index}.{js,css}',
+    //       dest: '{pathToYourCrafterSite}/sandbox/config/studio/plugins/apps/library'
+    //     }
+    //   ]
+    // })
   ]
 }
