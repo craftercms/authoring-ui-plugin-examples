@@ -22,9 +22,9 @@ Instructions:
       <widgets>
         ...
         <widget id="org.craftercms.sampleComponentLibraryPlugin.components.reactComponent">
-          <plugin site="{site}" type="example" name="sample" file="index.modern.js" />
+          <plugin site="{site}" type="apps" name="library" file="index.modern.js" />
         </widget>
         <widget id="org.craftercms.sampleComponentLibraryPlugin.components.nonReactComponent">
-          <plugin site="{site}" type="example" name="sample" file="index.modern.js" />
+          <plugin site="{site}" type="apps" name="library" file="index.modern.js" />
         </widget>
 ```
