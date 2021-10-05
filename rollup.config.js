@@ -13,6 +13,7 @@ const globals = {
   jss: 'craftercms.libs.jss',
   react: 'craftercms.libs.React',
   '@emotion/css': 'craftercms.libs.EmotionCSS',
+  '@emotion/css/create-instance': 'craftercms.libs.createEmotion',
   'react-dom': 'craftercms.libs.ReactDOM',
   'react-intl': 'craftercms.libs.ReactIntl',
   '@mui/material': 'craftercms.libs.MaterialUI',

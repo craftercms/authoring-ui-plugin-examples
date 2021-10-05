@@ -1,4 +1,6 @@
-import { css, flush } from '@emotion/css'
+import createEmotion from '@emotion/css/create-instance'
+
+const { css, flush } = createEmotion({ key: 'NonReactComponentEmotionKey' })
 
 export default {
   main({ craftercms, element, configuration }) {
