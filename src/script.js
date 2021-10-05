@@ -1,1 +1,9 @@
-console.log('loaded plugin script!');
+console.log(
+  '%c' +
+    '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *' +
+    '\n' +
+    '* Sample Crafter CMS plugin script was loaded successfully.' +
+    '\n' +
+    '* * * * * * * * * * * * * * * * * * * * * * * * * * * * * *',
+  'color: darkgreen'
+)

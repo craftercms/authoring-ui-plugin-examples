@@ -2,7 +2,16 @@ import * as React from 'react'
 import * as ReactDOM from 'react-dom'
 import * as ReactIntl from 'react-intl'
 import { IntlProvider } from 'react-intl'
-import * as MaterialUI from '@material-ui/core'
+import * as MaterialUI from '@mui/material'
+import * as EmotionCSS from '@emotion/css'
+// import { CrafterCMSGlobal } from '@craftercms/studio-ui'
+
+declare global {
+  interface Window {
+    // craftercms: CrafterCMSGlobal;
+    craftercms: any
+  }
+}
 
 // Using "App" as a lazily loaded component avoids it being bundled before
 // the `window.craftercms` declaration that it needs due to the imports getting
@@ -11,11 +20,30 @@ const App = React.lazy(() => import('./App'))
 
 // @ts-ignore
 window.craftercms = {
+  getStore() {
+    return {
+      getState() {
+        return {
+          user: {
+            username: 'John Doe'
+          }
+        }
+      }
+    }
+  },
+  getIntl() {
+    return {
+      formatMessage(descriptor) {
+        return descriptor.defaultMessage
+      }
+    }
+  },
   libs: {
     React,
     ReactDOM,
     ReactIntl,
-    MaterialUI
+    MaterialUI,
+    EmotionCSS
   }
 }
 

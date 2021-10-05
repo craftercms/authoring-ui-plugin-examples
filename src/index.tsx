@@ -36,4 +36,6 @@ const plugin /*: PluginDescriptor */ = {
   themes: []
 }
 
+export { ReactComponent, NonReactComponent }
+
 export default plugin
