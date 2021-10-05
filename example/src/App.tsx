@@ -1,9 +1,21 @@
-import React from 'react'
-import plugin from 'sample-craftercms-plugin'
+import React, { useEffect, useRef } from 'react'
+import { ReactComponent, NonReactComponent } from 'sample-craftercms-plugin'
 
 const App = () => {
-  const Component = plugin.widgets['org.craftercms.sampleComponentLibraryPlugin.components.reactComponent']
-  return <Component text="John" />
+  const nonReactRef = useRef(null)
+  useEffect(() => {
+    NonReactComponent.main({
+      craftercms: window.craftercms,
+      configuration: { fontColor: 'red' },
+      element: nonReactRef.current
+    })
+  }, [])
+  return (
+    <>
+      <ReactComponent text="John" />
+      <div ref={nonReactRef} />
+    </>
+  )
 }
 
 export default App
