@@ -3,7 +3,7 @@ import * as ReactDOM from 'react-dom'
 import * as ReactIntl from 'react-intl'
 import { IntlProvider } from 'react-intl'
 import * as MaterialUI from '@mui/material'
-import * as EmotionCSS from '@emotion/css'
+import createEmotion from '@emotion/css/create-instance'
 // import { CrafterCMSGlobal } from '@craftercms/studio-ui'
 
 declare global {
@@ -43,7 +43,7 @@ window.craftercms = {
     ReactDOM,
     ReactIntl,
     MaterialUI,
-    EmotionCSS
+    createEmotion
   }
 }
 

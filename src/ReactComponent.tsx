@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Typography } from '@mui/material'
 import { useIntl } from 'react-intl'
+import AutoAwesomeMotionOutlinedIcon from '@mui/icons-material/AutoAwesomeMotionOutlined'
 
 export interface ExampleComponentProps {
   text: string
@@ -17,6 +18,7 @@ const ReactComponent = ({ text }: ExampleComponentProps) => {
         textAlign: 'center'
       }}
     >
+      <AutoAwesomeMotionOutlinedIcon />
       Hello from the react world, {text}.{' '}
       {formatMessage({
         id: 'myTestTranslation',
