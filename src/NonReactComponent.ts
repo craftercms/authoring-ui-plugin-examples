@@ -1,10 +1,9 @@
 import createEmotion from '@emotion/css/create-instance';
 import { showSystemNotification } from '@craftercms/studio-ui/state/actions/system';
 
-const { css, flush } = createEmotion({ key: 'nonreactcomponent' });
-
 export default {
   main({ craftercms, element, configuration }) {
+    const { css, flush } = createEmotion({ key: 'nonreactcomponent' });
     const store = craftercms.getStore();
     const className = css({
       margin: '.5em',
