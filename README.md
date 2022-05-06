@@ -21,10 +21,10 @@ Instructions:
     <configuration>
       <widgets>
         ...
-        <widget id="org.craftercms.sampleComponentLibraryPlugin.components.reactComponent">
+        <widget id="org.craftercms.sample.viewSitesPanelButton">
           <plugin site="{site}" type="apps" name="library" file="index.modern.js" />
         </widget>
-        <widget id="org.craftercms.sampleComponentLibraryPlugin.components.nonReactComponent">
+        <widget id="org.craftercms.sample.nonReactComponent">
           <plugin site="{site}" type="apps" name="library" file="index.modern.js" />
         </widget>
 ```

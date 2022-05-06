@@ -1,41 +1,36 @@
-import ReactComponent from './ReactComponent'
-import NonReactComponent from './NonReactComponent'
-import en from './i18n/translations/en.json'
-import es from './i18n/translations/es.json'
-// import PluginDescriptor from '@craftercms/studio-ui'
+import ViewSitesPanelButton from './ViewSitesPanelButton';
+import NonReactComponent from './NonReactComponent';
+import en from './i18n/translations/en.json';
+import es from './i18n/translations/es.json';
+import { PluginDescriptor } from '@craftercms/studio-ui';
+import SitesView from './SitesView';
 
-const plugin /*: PluginDescriptor */ = {
+const plugin: PluginDescriptor = {
   id: 'org.craftercms.sampleComponentLibraryPlugin',
-  name: 'Sample component library',
-  description: 'An example plugin of a component library',
-  author: 'Roy Art',
-  logo: null,
   locales: {
     en,
     es
   },
-  apps: [
-    {
-      route: '/yada-yada',
-      widget: { id: 'org.craftercms.sampleComponentLibraryPlugin.components.reactComponent' }
-    }
-  ],
   widgets: {
-    'org.craftercms.sampleComponentLibraryPlugin.components.reactComponent': ReactComponent,
-    'org.craftercms.sampleComponentLibraryPlugin.components.nonReactComponent': NonReactComponent
+    'org.craftercms.sample.viewSitesPanelButton': ViewSitesPanelButton,
+    'org.craftercms.sample.sitesView': SitesView,
+    'org.craftercms.sample.nonReactComponent': NonReactComponent
   },
   scripts: [
-    {
-      src: 'https://code.jquery.com/jquery-3.5.1.min.js',
-      integrity: 'sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=',
-      crossorigin: 'anonymous'
-    },
-    'script.js'
+    // Below are examples of how to load scripts into the Studio runtime
+    // {
+    //   src: 'https://code.jquery.com/jquery-3.5.1.min.js',
+    //   integrity: 'sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=',
+    //   crossorigin: 'anonymous'
+    // },
+    // 'script.js'
   ],
-  stylesheets: ['index.css'],
-  themes: []
-}
+  stylesheets: [
+    // Examples of how to load stylesheets into the Studio runtime
+    // 'index.css'
+  ]
+};
 
-export { ReactComponent, NonReactComponent }
+export { ViewSitesPanelButton, NonReactComponent };
 
-export default plugin
+export default plugin;

@@ -1,7 +1,7 @@
-import ReactComponent from './ReactComponent'
+import ViewSitesPanelButton from './ViewSitesPanelButton';
 
-describe('ReactComponent', () => {
+describe('ViewSitesPanelButton', () => {
   it('is truthy', () => {
-    expect(ReactComponent).toBeTruthy()
-  })
-})
+    expect(ViewSitesPanelButton).toBeTruthy();
+  });
+});

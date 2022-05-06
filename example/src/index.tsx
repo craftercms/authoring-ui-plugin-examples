@@ -31,10 +31,12 @@ window.craftercms = {
       }
     }
   },
-  getIntl() {
-    return {
-      formatMessage(descriptor) {
-        return descriptor.defaultMessage
+  utils: {
+    getCurrentIntl() {
+      return {
+        formatMessage(descriptor) {
+          return descriptor.defaultMessage
+        }
       }
     }
   },
