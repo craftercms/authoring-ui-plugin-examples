@@ -1,0 +1,63 @@
+{
+  "private": true,
+  "name": "example-component-library",
+  "version": "1.0.0",
+  "description": "A Crafter CMS example plugin of components that can be used on Studio UI",
+  "author": "rart",
+  "license": "MIT",
+  "repository": {
+    "url": "craftercms/craftercms-ui-plugin-sample",
+    "directory": "packages/example-component-library"
+  },
+  "main": "dist/index.js",
+  "module": "build/index.js",
+  "typings": "build/index.d.ts",
+  "engines": {
+    "node": ">=10"
+  },
+  "scripts": {
+    "dist": "rollup --config rollup.config.js",
+    "build": "tsc -p tsconfig.json",
+    "watch": "rollup --config rollup.config.js -w",
+    "i18n": "run-s i18n:extract i18n:compile i18n:manage",
+    "i18n:extract": "formatjs extract --extract-source-location true --out-file ./src/i18n/messages/extract.json src/**/*.{tsx,ts}",
+    "i18n:compile": "formatjs compile --out-file ./src/i18n/translations/en.json ./src/i18n/messages/extract.json",
+    "i18n:manage": "node manageTranslations.js"
+  },
+  "devDependencies": {
+    "@formatjs/cli": "^2.13.12",
+    "@rollup/plugin-commonjs": "^22.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.2.1",
+    "@rollup/plugin-replace": "^4.0.0",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "npm-run-all": "^4.1.5",
+    "react-intl-translations-manager": "^5.0.3",
+    "rollup": "^2.33.2",
+    "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-replace-imports-with-vars": "^1.1.0",
+    "rollup-plugin-ts-treeshaking": "^1.0.2",
+    "rollup-plugin-typescript2": "^0.31.2",
+    "typescript": "^4.4.2"
+  },
+  "dependencies": {
+    "@craftercms/studio-ui": "^1.0.0-rc.3",
+    "@emotion/css": "^11.5.0",
+    "@emotion/react": "^11.5.0",
+    "@emotion/styled": "^11.3.0",
+    "@mui/icons-material": "^5.3.0",
+    "@mui/lab": "^5.0.0-alpha.65",
+    "@mui/material": "^5.3.0",
+    "prettier": "^2.5.1",
+    "query-string": "^6.14.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "react-intl": "^5.10.1",
+    "react-redux": "^7.2.6",
+    "redux": "^4.1.2",
+    "rxjs": "^7.5.5"
+  }
+}
