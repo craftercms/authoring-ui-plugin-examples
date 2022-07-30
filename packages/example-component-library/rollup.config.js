@@ -5,7 +5,7 @@ import replaceImportsWithVars from 'rollup-plugin-replace-imports-with-vars';
 import json from '@rollup/plugin-json';
 import pkg from './package.json';
 import copy from 'rollup-plugin-copy';
-import treeshaking from 'rollup-plugin-ts-treeshaking';
+import { terser } from 'rollup-plugin-terser';
 import replace from '@rollup/plugin-replace';
 
 const extensions = ['.js', '.jsx', '.ts', '.tsx'];
@@ -51,7 +51,7 @@ export default {
     typescript({
       tsconfigOverride: { compilerOptions: { declaration: false } }
     }),
-    treeshaking(),
+    terser(),
     replaceImportsWithVars({
       replacementLookup: globals,
       replacementRegExps
