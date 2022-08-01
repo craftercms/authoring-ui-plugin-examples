@@ -2,7 +2,7 @@
 
 This example demonstrates how to create a CrafterCMS extension that exports various widgets that can be used across Studio UI.
 
-This instructions assume you have a project called `editorial-neue`. Update accordingly if your
+These instructions assume you have a project called `editorial-neue`. Update accordingly if your
 project id is something different.
 
 Instructions:
