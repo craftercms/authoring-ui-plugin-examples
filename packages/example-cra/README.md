@@ -12,9 +12,10 @@ This example illustrates
 - Run `yarn start` to start the dev server. View the app at `http://localhost:3000/studio`.
   - **Note**: you need to be running a CrafterCMS instance at `http://localhost:8080`.
 - Run `yarn build` to build the app
-- Deploy to CrafterCMS by copying `build/*` to `{crafter}/crafter-authoring/data/repos/sites/editorial-neue/sandbox/config/studio/plugins/apps/example-cra`
-  - View the deployed app in CrafterCMS at `http://localhost:8080/studio/plugin?site=editorial-neue&type=apps&name=example-cra&file=index.html`
-  - **Note**: this example assumes your site is called `editorial-neue`. If you have a different site name, please edit the `site` argument above and the `siteId` argument in the `PUBLIC_URL` on `.env.production`.
+- Deploy to CrafterCMS by creating a plugin using the `build/*` files with CATEGORY set to `apps`
+  and NAME set to `example-cra` then install it via the `crafter-cli` command `copy-plugin`.
+  - View the deployed app in CrafterCMS at `http://localhost:8080/studio/plugin?site=editorial-neue&pluginId=PLUGIN_ID&type=apps&name=example-cra&file=index.html`  where `PLUGIN_ID` is the plugin ID used in the plugin descriptor file
+  - **Note**: this example assumes your project is called `editorial-neue`. If you have a different project name, please edit the `site` argument above and the `siteId` argument in the `PUBLIC_URL` on `.env.production`.
 
 ## Available Scripts
 
@@ -60,3 +61,6 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+To learn more on creating plugins in CrafterCMS, see [CrafterCMS plugins documentation](https://docs.craftercms.org/en/4.0/developers/extensions/plugins.html) 
+
