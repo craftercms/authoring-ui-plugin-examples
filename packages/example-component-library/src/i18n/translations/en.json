@@ -1,8 +1,8 @@
 {
-  "org.craftercms.example.sitesView.noContentTypesMessage": "There are no content types",
-  "org.craftercms.example.sitesView.numOfContentTypesMessage": "There {total, plural, one {is one content type} other {are {total} content types}}",
-  "org.craftercms.example.sitesView.numOfProjectsMessage": "You have {total, plural, one {one project} other {{total} projects}}",
-  "org.craftercms.example.vanilla.exampleTranslations": "Hello. This text is internationalized.",
-  "org.craftercms.example.vanilla.myProjects": "My Projects",
-  "org.craftercms.example.vanilla.viewProjects": "View my projects"
+  "org.craftercms.examples.sitesView.noContentTypesMessage": "There are no content types",
+  "org.craftercms.examples.sitesView.numOfContentTypesMessage": "There {total, plural, one {is one content type} other {are {total} content types}}",
+  "org.craftercms.examples.sitesView.numOfProjectsMessage": "You have {total, plural, one {one project} other {{total} projects}}",
+  "org.craftercms.examples.vanilla.exampleTranslations": "Hello. This text is internationalized.",
+  "org.craftercms.examples.vanilla.myProjects": "My Projects",
+  "org.craftercms.examples.vanilla.viewProjects": "View my projects"
 }

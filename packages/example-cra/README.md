@@ -14,8 +14,8 @@ This example illustrates
 - Run `yarn build` to build the app
 - Deploy to CrafterCMS by creating a plugin using the `build/*` files with CATEGORY set to `apps`
   and NAME set to `example-cra` then install it via the `crafter-cli` command `copy-plugin`.
-  - View the deployed app in CrafterCMS at `http://localhost:8080/studio/plugin?site=editorial-neue&pluginId=PLUGIN_ID&type=apps&name=example-cra&file=index.html`  where `PLUGIN_ID` is the plugin ID used in the plugin descriptor file
-  - **Note**: this example assumes your project is called `editorial-neue`. If you have a different project name, please edit the `site` argument above and the `siteId` argument in the `PUBLIC_URL` on `.env.production`.
+  - View the deployed app in CrafterCMS at `http://localhost:8080/studio/plugin?site=editorial&pluginId=PLUGIN_ID&type=apps&name=example-cra&file=index.html`  where `PLUGIN_ID` is the plugin ID used in the plugin descriptor file
+  - **Note**: this example assumes your project is called `editorial`. If you have a different project name, please edit the `site` argument above and the `siteId` argument in the `PUBLIC_URL` on `.env.production`.
 
 ## Available Scripts
 
@@ -62,5 +62,5 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-To learn more on creating plugins in CrafterCMS, see [CrafterCMS plugins documentation](https://docs.craftercms.org/en/4.0/developers/extensions/plugins.html) 
+To learn more on creating plugins in CrafterCMS, see [CrafterCMS plugins documentation](https://docs.craftercms.org/en/4.0/developers/extensions/plugins.html)
 

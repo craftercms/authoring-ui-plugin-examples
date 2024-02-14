@@ -14,17 +14,17 @@ export function ViewProjectsPanelButton() {
         dispatch(
           showWidgetDialog({
             title: formatMessage({
-              id: 'org.craftercms.example.vanilla.myProjects',
+              id: 'org.craftercms.examples.vanilla.myProjects',
               defaultMessage: 'My Projects'
             }),
             widget: {
-              id: 'org.craftercms.example.projectsView'
+              id: 'org.craftercms.examples.projectsView'
             }
           })
         )
       }
       title={formatMessage({
-        id: 'org.craftercms.example.vanilla.viewProjects',
+        id: 'org.craftercms.examples.vanilla.viewProjects',
         defaultMessage: 'View my projects'
       })}
     />

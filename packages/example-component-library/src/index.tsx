@@ -8,17 +8,17 @@ import PathExploringView from './components/PathExploringView';
 import ContentTypesView from './components/ContentTypesView';
 
 const plugin: PluginDescriptor = {
-  id: 'org.craftercms.example.componentLibrary',
+  id: 'org.craftercms.examples.componentLibrary',
   locales: {
     en,
     es
   },
   widgets: {
-    'org.craftercms.example.vanilla': Vanilla,
-    'org.craftercms.example.projectsView': ProjectsView,
-    'org.craftercms.example.contentTypesView': ContentTypesView,
-    'org.craftercms.example.pathExploringView': PathExploringView,
-    'org.craftercms.example.viewProjectsPanelButton': ViewProjectsPanelButton
+    'org.craftercms.examples.vanilla': Vanilla,
+    'org.craftercms.examples.projectsView': ProjectsView,
+    'org.craftercms.examples.contentTypesView': ContentTypesView,
+    'org.craftercms.examples.pathExploringView': PathExploringView,
+    'org.craftercms.examples.viewProjectsPanelButton': ViewProjectsPanelButton
   },
   scripts: [
     // Below are examples of how to load scripts into the Studio runtime
