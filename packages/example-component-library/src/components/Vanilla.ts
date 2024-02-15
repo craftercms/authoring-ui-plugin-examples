@@ -4,7 +4,7 @@ import { defineMessages } from 'react-intl';
 
 const messages = defineMessages({
   systemNotification: {
-    id: 'org.craftercms.example.vanilla.exampleTranslations',
+    id: 'org.craftercms.examples.vanilla.exampleTranslations',
     defaultMessage: 'Hello. This text is internationalized.'
   }
 });

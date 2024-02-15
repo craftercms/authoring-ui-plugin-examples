@@ -33,13 +33,13 @@ export function ContentTypesView(props: ContentTypesViewProps) {
       <Typography variant="body2" textAlign="center">
         {numOfTypes ? (
           <FormattedMessage
-            id="org.craftercms.example.sitesView.numOfContentTypesMessage"
+            id="org.craftercms.examples.sitesView.numOfContentTypesMessage"
             defaultMessage="There {total, plural, one {is one content type} other {are {total} content types}}"
             values={{ total: numOfTypes }}
           />
         ) : (
           <FormattedMessage
-            id="org.craftercms.example.sitesView.noContentTypesMessage"
+            id="org.craftercms.examples.sitesView.noContentTypesMessage"
             defaultMessage="There are no content types"
           />
         )}

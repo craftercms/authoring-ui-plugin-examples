@@ -1,0 +1,7 @@
+{
+  "private": true,
+  "name": "example-vanilla",
+  "scripts": {
+    "build": "cp index.js ../../authoring/static-assets/plugins/org/craftercms/examples/vanilla/index.js"
+  }
+}

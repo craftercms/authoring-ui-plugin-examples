@@ -6,9 +6,8 @@
   "author": "rart <royart@me.com>",
   "license": "MIT",
   "private": true,
-  "packageManager": "yarn@3.2.2",
+  "packageManager": "yarn@4.1.0",
   "workspaces": [
-    "packages/example-component-library",
-    "packages/example-cra"
+    "packages/*"
   ]
 }

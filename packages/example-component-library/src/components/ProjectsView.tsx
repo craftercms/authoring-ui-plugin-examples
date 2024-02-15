@@ -27,13 +27,14 @@ export function ProjectsView(props: ProjectsViewProps) {
               onEditSiteClick={null}
               onPublishButtonClick={null}
               publishingStatus={false}
+              onDuplicateSiteClick={null}
             />
           </Grid>
         ))}
       </Grid>
       <Typography variant="body2" textAlign="center">
         <FormattedMessage
-          id="org.craftercms.example.sitesView.numOfProjectsMessage"
+          id="org.craftercms.examples.sitesView.numOfProjectsMessage"
           defaultMessage="You have {total, plural, one {one project} other {{total} projects}}"
           values={{ total: sites.total }}
         />
