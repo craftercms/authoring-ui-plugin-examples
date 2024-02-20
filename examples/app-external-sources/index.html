@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="%VITE_APP_AUTHORING_BASE%/static-assets/img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CrafterCMS + Vite + React + TS</title>
+    <%if (MODE === 'development') { %><script>
+      window.process = {
+        env: {
+          NODE_ENV: '%MODE%',
+          REACT_APP_AUTHORING_BASE: '%VITE_APP_AUTHORING_BASE%',
+          REACT_APP_GUEST_BASE: '%VITE_APP_GUEST_BASE%',
+          PUBLIC_URL: '%VITE_APP_PUBLIC_URL%'
+        }
+      };
+    </script><% } %>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

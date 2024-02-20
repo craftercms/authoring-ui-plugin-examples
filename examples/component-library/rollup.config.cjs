@@ -36,9 +36,6 @@ const replacementRegExps = {
   '@mui/icons-material/(.+(Rounded|Outlined))$': (exec) => `craftercms.utils.constants.components.get('${exec[0]}')`
 };
 
-const basePluginDir = '../authoring/static-assets/plugins/org/craftercms/openai';
-const publicDir = './public';
-
 module.exports = {
   context: 'this',
   input: 'src/index.tsx',

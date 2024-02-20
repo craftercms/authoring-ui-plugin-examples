@@ -1,6 +1,6 @@
 # Plugin Host Vanilla Example
 
-This example demonstrates a standalone app plugin destined to run on CrafterCMS Plugin Host page.
+This example demonstrates a simple app that runs on the Plugin Host page.
 
 **Note**: this example assumes your project is called `editorial`. If you have a different project name, update the path and url below accordingly.
 
