@@ -18,17 +18,17 @@ function App() {
     setDialog({ props: { open: false }, component: null });
   };
   // You could also import the sample components like this:
-  // import { ProjectsView, ContentTypesView, PathExploringView } from 'example-component-library';
+  // import { ProjectsView, ContentTypesView, PathExploringView } from 'component-library';
   const listMySites = () => {
-    const ProjectsView = lazy(() => import('example-component-library/build/components/ProjectsView'));
+    const ProjectsView = lazy(() => import('component-library/build/components/ProjectsView'));
     openDialog({ title: 'My Projects' }, <ProjectsView />);
   };
   const listContentTypes = () => {
-    const ContentTypesView = lazy(() => import('example-component-library/build/components/ContentTypesView'));
+    const ContentTypesView = lazy(() => import('component-library/build/components/ContentTypesView'));
     openDialog({ title: 'Content Types' }, <ContentTypesView />);
   };
   const pathExploring = () => {
-    const PathExploringView = lazy(() => import('example-component-library/build/components/PathExploringView'));
+    const PathExploringView = lazy(() => import('component-library/build/components/PathExploringView'));
     openDialog({ title: 'Content Types' }, <PathExploringView />);
   };
   return (

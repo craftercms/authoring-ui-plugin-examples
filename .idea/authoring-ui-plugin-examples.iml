@@ -4,9 +4,9 @@
     <exclude-output />
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.yarn/cache" />
-      <excludeFolder url="file://$MODULE_DIR$/packages/example-component-library/src/i18n/messages" />
-      <excludeFolder url="file://$MODULE_DIR$/packages/example-component-library/build" />
-      <excludeFolder url="file://$MODULE_DIR$/packages/example-component-library/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/examples/component-library/build" />
+      <excludeFolder url="file://$MODULE_DIR$/examples/component-library/dist" />
+      <excludeFolder url="file://$MODULE_DIR$/examples/component-library/src/i18n/messages" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />

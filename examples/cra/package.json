@@ -1,10 +1,10 @@
 {
-  "name": "example-cra-standalone",
+  "name": "example-cra",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:8080",
   "dependencies": {
-    "@craco/craco": "^6.4.3",
+    "@craco/craco": "^6.4.5",
     "@craftercms/studio-ui": "^4.1.2",
     "@emotion/css": "^11.11.2",
     "@emotion/react": "^11.11.3",
@@ -32,7 +32,7 @@
     "redux": "^4.2.1",
     "redux-observable": "^2.0.0",
     "rxjs": "^7.8.1",
-    "sass": "^1.70.0",
+    "sass": "^1.71.0",
     "typescript": "^5.3.3",
     "video.js": "^7.21.5",
     "web-vitals": "^2.1.4"
