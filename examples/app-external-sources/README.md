@@ -3,9 +3,10 @@
 Plugins require their distribution to be committed to the CrafterCMS Project repository (for Studio to be able to see the files).
 Depending on the size and _dev stack_ of the application and your preferences, this can create undesired commit history.
 
-If you don't mind this, you may use still this template to develop your app and commit the build files to the CrafterCMS Project repository.
-If you do, this examples demonstrate how you can use an external hosting for the bulk of the plugin build files, while still being able to
-leverage Studio's Plugin Host by simply keeping the entry point of the application on the CrafterCMS Project repository,
+If you don't mind this, you may use still this template to develop your app and commit the build files to the CrafterCMS Project repository — make sure to review the edits necessary on the `vite.config.ts` file.
+
+If you don't want all the build files checked in your project repo, this example demonstrates how you can use an external hosting for the bulk of the plugin build files,
+while still being able to leverage Studio's Plugin Host by simply keeping the entry point of the application on the CrafterCMS Project repository,
 while the rest app assets and resources are hosted elsewhere.
 
 Running your app on the Plugin Host, you'll be leveraging Studio's authentication and authorization.

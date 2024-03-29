@@ -15,6 +15,8 @@ export default defineConfig(({ mode }) => {
   return {
     // The value of `base` should be whatever your external host address is.
     base: mode === 'development' ? '/studio' : 'http://localhost:3000',
+    // If you're NOT using an external host, you can use the following line instead. Also need to uncomment the plugin code below (on the `plugins` section).
+    // base: mode === 'development' ? '/studio' : '/PLUGIN_FILE_URL/',
     server: {
       port: 3000,
       proxy: {
@@ -37,7 +39,32 @@ export default defineConfig(({ mode }) => {
       createHtmlPlugin({
         entry: 'src/main.tsx',
         minify: false
-      })
+      }),
+      // region Plugin File Url Replace Plugin
+      // If you're NOT using an external host, you can use the following plugin together with the suggested `base` property above.
+      // Make sure to replace the placeholders on the `replace` function with your actual values.
+      /* (function () {
+        const replace = (code) => code.replace(
+          /\/PLUGIN_FILE_URL\//g,
+          // Replace placeholders here:
+          '/studio/1/plugin/file?siteId=YOUR_SITE&type=YOUR_TYPE&name=YOUR_NAME&pluginId=YOUR_PLUGIN_ID&filename='
+        );
+        return {
+          name: 'ReplaceCrafterCMSPluginFileUrl',
+          generateBundle(_, bundle) {
+            for (const fileName in bundle) {
+              const chunk = bundle[fileName];
+              if (chunk.type === 'chunk') {
+                chunk.code = replace(chunk.code);
+              }
+            }
+          },
+          transformIndexHtml(html) {
+            return replace(html);
+          }
+        };
+      })() */
+      // endregion
     ],
     build: {
       minify: false
